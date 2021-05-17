@@ -39,7 +39,6 @@ html, body{
     min-height: 100%;
     transform: translateX(-50%) translateY(-50%);
     z-index:-1;
-    background-image: url(../video/Pinds\ of\ Punjab\ -\ Drone\ Video\ -\ Boom\ Shankar\ -\ Gurbax.mp4);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,8 +60,7 @@ html, body{
 .content{
     height: 100%;
     width: 100%;
-    display: flex;
-    
+    display: flex;    
     flex-direction: column;
     padding-top: 0%;
     /* position: fixed; */
@@ -92,13 +90,14 @@ html, body{
 
 }
 .tagline img{
-    margin-top:15%;
+    padding-top:20%;
+    display:fixed;
     width:40%;
-    height:80%;
-    /* position:absolute; */
+    height:100%;
+    align-items: bottom;
+    justify-content:bottom;
 }
 
-/* about us */
 
 .about-title{
     text-align: center;
@@ -111,10 +110,12 @@ html, body{
     font-family: Roboto;
     margin-bottom:0px;
     /* font-weight: 100px; */
-    /* background-color:black; */
+    background-color:black;
     /* background: url(./about-us2.jpeg);  */
-    background-image: url(./sponser2.jpg);
+    background-image: url(./aboutFinal.png);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left;
 
 }
 
@@ -190,8 +191,11 @@ html, body{
 #supporters {
     padding: 60px 0;
     /* background-color:rgb(36, 31, 31); */
-    background-image: url(./sponsers.jpg);
+    background-image: url(./sponsersFinal.png);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(15, 15, 14, 0.993);
+    background-position: right;
     
     
   }
@@ -241,9 +245,13 @@ html, body{
     padding-bottom:5%;
     /* padding:50px 0; */
     color:#f0f9ff;
-    background-color:#282d32;
-    background:url(./contact.jpg);
+    background-color:black;
+    /* background:url(./sponser2.jpg); */
+    background-image: url(./contactfinal.png);
+    background-repeat:no-repeat;
     background-attachment: fixed;
+    background-position:left;
+    /* background-origin:padding-box; */
   }
   
   .footer-dark h3 {
@@ -349,25 +357,22 @@ html, body{
     .contact-content{
         margin: auto;
     }
-    .follow{
-        margin-top: 50px;
-    }
-    .evetext, .starttext{
-        font-size: 2rem;
-    }
 
-    .evework, .starter{
-        padding: 20px 50px;
-    }
-    .anim-typewriter{
-        line-height: 35px;
-    }
-    #videoBG{
+
+    #bg-video{
         z-index: -2;
         position: fixed;
         overflow: hidden;
         width: auto;
         height: 100vh;
+    }
+
+    .about-content{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .social-media{
+      padding-left: 0px !important;
     }
 }
 
@@ -475,3 +480,38 @@ html, body{
     background-image: url(./contact.jpg);
     background-attachment: fixed;
 }
+
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+ 
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
+
